@@ -1,0 +1,44 @@
+/* li { list-style-type: square } */
+.cena
+{
+    font-weight: bold;
+    color: red;
+}
+
+.wstep
+{
+    font-style: italic;
+}
+
+.image1
+{
+    border-color: blue;
+    border-style: solid;
+}
+
+.image1:hover
+{
+    border-color: red;
+}
+
+h1 + h2 {
+    letter-spacing: 5px;
+}
+
+td[colspan="2"] p {
+    font-size: small;
+}
+
+p + p {
+    color: gray;
+}
+
+body {
+    background-image: url(usnp2.jpg);
+    background-repeat: repeat-y;
+}
+
+/* h1 { color: blue }
+h1 { color: green } */
+/* zastosowana jest ostatnia reguła */
+

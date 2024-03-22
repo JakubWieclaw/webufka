@@ -1,0 +1,4 @@
+17. ostatnia
+18. ta zdefiniowana później
+19. w tej sytuacji reguła !important ma priorytet
+20. kolor jest czerwony tylko w wypadku !important
