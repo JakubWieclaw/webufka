@@ -44,7 +44,7 @@ footer {
     margin-top: auto;
 }
 
-#header-title {
+h1 {
     margin-left: 15px;
     font-weight: bold;
     font-size: 2em;
@@ -100,7 +100,7 @@ article h2 {
     main {
         flex-wrap: wrap;
     }
-    #header-title {
+    h1 {
         display: none;
     }
     nav {
