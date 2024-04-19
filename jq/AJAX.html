@@ -16,20 +16,22 @@
         }
     </style>
     <script type="text/javascript">
-        $('a').click(function() {
-            var thisA = $(this);
-            $('#content').animate({
-                height: '0px',
-                width: '0px'
-            }, function() {
-                $('#content').load('AJAX' + thisA.attr('href'), function() {
-                    $('#content').animate({
-                        height: '500px',
-                        width: '500px'
+        $(document).ready(function() {
+            $('a').click(function() {
+                var thisA = $(this);
+                $('#content').animate({
+                    height: '0px',
+                    width: '0px'
+                }, function() {
+                    $('#content').load('AJAX' + thisA.attr('href'), function() {
+                        $('#content').animate({
+                            height: '500px',
+                            width: '500px'
+                        });
                     });
                 });
+                return false;
             });
-            return false;
         });
     </script>
 </head>
@@ -37,9 +39,9 @@
 <body>
     <header>
         <nav>
-            <a href="AJAXSelektory.html">Strona1</a>
-            <a href="AJAXStyle.html">Strona2</a>
-            <a href="AJAXZdarzenia.html">Strona3</a>
+            <a href="Selektory.html">Strona1</a>
+            <a href="Style.html">Strona2</a>
+            <a href="Zdarzenia.html">Strona3</a>
         </nav>
     </header>
     <div id="content"></div>
