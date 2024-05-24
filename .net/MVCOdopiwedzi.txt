@@ -1,0 +1,36 @@
+1.  
+Model: Reprezentuje dane i logikę biznesową, zarządza danymi.
+View (Widok): Wyświetla dane użytkownikowi, otrzymuje dane od kontrolera.
+Controller (Kontroler): Obsługuje logikę aplikacji, przetwarza dane wejściowe od użytkownika, komunikuje się z modelem i widokiem.
+
+Połączenia:
+
+    Kontroler komunikuje się z modelem i widokiem.
+    Model działa niezależnie od widoku i kontrolera.
+    Widok otrzymuje dane od kontrolera.
+	
+2.
+Modele to Rzeczowniki
+Kontrolery to modele + Controller
+Akcje kontrolera to Czasowniki
+Widoki odpowiadają nazwie akcji
+Foledery odpowiajają Kontrolerom bez przyrostka
+
+3.
+Za pomocą słownika ViewData
+Za pomocą obiektu ViewModel
+
+4.
+URLs są mapowane na akcje kontrolerów za pomocą routingu, który jest domyślnie konfigurowany w pliku Program.cs w polu pattern.
+W tym projekcie wygląda to następująco: 
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+	
+5.
+Należy dodać do definicji kontrolera "[HttpPost]"
+
+6.
+Walidacja pól zdefiniowana jest w samym modelu.
+W kontrolerze sprawdzamy czy model jest poprawny (np. metodą isValid)
+W widoku można dodać do formularza kod walidujący.
