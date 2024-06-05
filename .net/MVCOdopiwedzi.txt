@@ -5,9 +5,9 @@ Controller (Kontroler): Obsługuje logikę aplikacji, przetwarza dane wejściowe
 
 Połączenia:
 
-    Kontroler komunikuje się z modelem i widokiem.
-    Model działa niezależnie od widoku i kontrolera.
-    Widok otrzymuje dane od kontrolera.
+Kontroler komunikuje się z modelem i widokiem.
+Model działa niezależnie od widoku i kontrolera.
+Widok otrzymuje dane od kontrolera.
 	
 2.
 Modele to Rzeczowniki
